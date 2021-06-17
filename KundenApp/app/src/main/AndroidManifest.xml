@@ -10,14 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KundenApp">
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:name=".PrivacyActivity2"
+            android:label="title_activity_privacy2"/>
+        <!--android:theme="@style/Theme.KundenAppNoActionBar" >-->
+    <activity
+        android:name=".MainActivity"
+        android:label="title_activity_main"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+    <activity
+        android:name=".LoadscreenActivity"
+        android:label="@string/app_name">
+        <!--android:theme="@style/Theme.KundenAppNoActionBar" >-->
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+</application>
 
 </manifest>

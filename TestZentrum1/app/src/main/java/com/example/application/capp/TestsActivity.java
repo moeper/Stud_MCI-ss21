@@ -33,9 +33,11 @@ public class TestsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         setContentView(R.layout.activity_tests);
 
-        listView.findViewById(R.id.listview);
+        listView = findViewById(R.id.listview);
 
         for (int i= 0; i<dateOf.length;i++){
             Test test = new Test(dateOf[i],testId[i],personId[i],testState[i],icons[i]);

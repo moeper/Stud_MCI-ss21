@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImpressActivity">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="129dp"
+        android:gravity="center"
+        android:text="Impressum"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="662dp"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Informationspflicht laut § 5 TMG. \n
+
+MusterFirma GmbH Co KG \n
+Musterstrasse 1, Stiege 1 Tür 1, \n
+12345 Musterhausen, \n
+Deutschland \n
+ \n
+UID-Nummer: DE12345678 \n
+Wirtschafts-ID: DE123456789 \n
+ \n
+Tel.: 01234/56789 \n
+Fax: 01234/56789-0 \n
+E-Mail: office@musterfirma.de \n
+ \n
+Aufsichtsbehörde \n
+Bezirkshauptmannschaft Musterhausen \n
+Webseite der Aufsichtsbehörde \n
+https://www.aufsichtsbeoerde-musterhausen.de/ \n
+Anschrift der Aufsichtsbehörde \n
+Musterweg 1, 12345 Musterhausen \n
+ \n
+Berufsbezeichnung: Webdesigner, Grafiker \n
+ \n
+Persönlich haftende Gesellschafter (Komplementär) der GmbH Co KG \n
+Frieda Musterkomp \n
+ \n
+Geschäftsführer \n
+Markus Muster, Thomas Muster \n
+ \n
+Registernummer der Komplementär-GmbH: \n
+HRB 123456 \n
+ \n
+Registergericht der Komplementär-GmbH: \n
+Musterhausen \n
+Kontaktdaten des Verantwortlichen für Datenschutz \n
+ \n
+Sollten Sie Fragen zum Datenschutz haben, finden Sie nachfolgend die Kontaktdaten der verantwortlichen Person bzw. Stelle: \n
+Musterfirma GmbH \n
+Musterstraße 47, 12312 Musterstadt, Musterland \n
+Vertretungsberechtigt: Markus Mustermann \n
+E-Mail-Adresse: office@musterfirma.com \n
+Telefon: 01234/56789 \n
+Impressum: https://www.testfirma.at/impressum/ \n
+ \n
+Quelle: Erstellt mit dem Impressum Generator von AdSimple"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+</RelativeLayout>

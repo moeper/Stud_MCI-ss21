@@ -27,7 +27,7 @@ import androidx.appcompat.app.AppCompatActivity;
     }
     private Runnable runnable = () -> {
         if (!isFinishing()){
-            startActivity(new Intent(getApplicationContext(), PrivacyActivity2.class));
+            startActivity(new Intent(getApplicationContext(), FaqActivity.class));
             finish();
         }
     };

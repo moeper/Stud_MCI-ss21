@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.KundenApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. D8FFE0-->
-        <item name="colorPrimary">@android:color/holo_green_light</item>
-        <item name="colorPrimaryVariant">@android:color/holo_green_dark</item>
+        <item name="colorPrimary">@color/AppGruenHell</item>
+        <item name="colorPrimaryVariant">@color/AppGruenDunkel</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

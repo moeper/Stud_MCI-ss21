@@ -72,6 +72,7 @@
         android:background="@drawable/layout_bg_round"
         android:text="Bestätigen"
         android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:backgroundTint="#5DB075"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

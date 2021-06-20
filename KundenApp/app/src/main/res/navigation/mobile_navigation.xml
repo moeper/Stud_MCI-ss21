@@ -22,4 +22,9 @@
         android:name="com.example.kundenapp.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/fragment_testnegativ"
+        android:name="com.example.kundenapp.fragment_testnegativ"
+        android:label="fragment_testnegativ"
+        tools:layout="@layout/fragment_testnegativ" />
 </navigation>

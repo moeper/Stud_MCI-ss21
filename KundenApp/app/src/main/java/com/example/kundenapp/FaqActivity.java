@@ -26,6 +26,10 @@ public class FaqActivity extends AppCompatActivity {
     List<String> listDataHeader;
     HashMap<String, List<String>> listDataChild;
 
+    private int lastPosition = -1;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +47,18 @@ public class FaqActivity extends AppCompatActivity {
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
+
+        expListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+
+            @Override
+            public void onGroupExpand(int groupPosition) {
+                if (lastPosition != -1
+                        && groupPosition != lastPosition) {
+                    expListView.collapseGroup(lastPosition);
+                }
+                lastPosition = groupPosition;
+            }
+        });
     }
 
 

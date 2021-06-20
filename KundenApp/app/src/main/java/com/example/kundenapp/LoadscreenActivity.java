@@ -27,7 +27,7 @@ import androidx.appcompat.app.AppCompatActivity;
     }
     private Runnable runnable = () -> {
         if (!isFinishing()){
-            startActivity(new Intent(getApplicationContext(), FaqActivity.class));
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
             finish();
         }
     };

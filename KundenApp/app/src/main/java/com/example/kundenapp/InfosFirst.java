@@ -27,7 +27,7 @@ public class InfosFirst extends AppCompatActivity {
 
     }
     public void openActivity(){
-        Intent intent = new Intent(this, InfosFirst.class);
+        Intent intent = new Intent(this, FirstStartActivity.class);
         startActivity(intent);
     }
 }

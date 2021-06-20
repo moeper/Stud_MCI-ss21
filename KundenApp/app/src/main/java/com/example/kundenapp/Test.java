@@ -33,7 +33,7 @@ public class Test implements Serializable {
                 '}';
     }
 
-    public int getIcon() {
+    public int getIcon(int ic_positiv) {
         return icon;
     }
 

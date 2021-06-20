@@ -57,7 +57,7 @@ public class NotificationsFragment extends Fragment implements AdapterView.OnIte
     private FragmentNotificationsBinding binding;
 
     private String testToString(Test test){
-        return test.getTestId().substring(0,20) + " - " + test.getTestResult() + " - " + test.getDateOf();
+        return test.getTestId().substring(0,20) +  " - " + test.getDateOf() + " - " + test.getTestResult();
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -74,7 +74,10 @@ public class NotificationsFragment extends Fragment implements AdapterView.OnIte
             @Override
             public void onClick(View v) {
                 Test newTest = new Test(LocalDateTime.now().toString(),UUID.randomUUID().toString(),UUID.randomUUID().toString(),TestState.NEGATIV,R.drawable.ic_negativ);
-                listOfTests.add(newTest);
+                if (testList.size()==1){
+                    newTest.setTestResult(TestState.POSITIV);
+                    newTest.getIcon(R.drawable.ic_positiv);
+                }
                 testList.add(testToString(newTest));
                 Navigation.findNavController(v).navigate(R.id.action_navigation_notifications_to_fragment_testnegativ);
 
@@ -116,20 +119,19 @@ public class NotificationsFragment extends Fragment implements AdapterView.OnIte
 
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Test getTest = listOfTests.get(position);
-                    if (getTest.getTestResult().equals(TestState.NEGATIV)) {
+                    if (position==1) {
                         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
                         builder.setTitle("Test Ergebnis");
-                        builder.setMessage("Ihre Test am " + getTest.getDateOf() + " ist " + getTest.getTestResult().toString());
-                        builder.setIcon(R.drawable.ic_negativ);
+                        builder.setMessage(testList.get(position));
+                        builder.setIcon(R.drawable.ic_positiv);
                         builder.setPositiveButton(
                                 "OK", (dialogInterface, i) -> dialogInterface.dismiss());
                         builder.show();
                     }else {
                         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
                         builder.setTitle("Test Ergebnis");
-                        builder.setMessage("Ihre Test am " + getTest.getDateOf() + " ist " + getTest.getTestResult().toString());
-                        builder.setIcon(R.drawable.ic_positiv);
+                        builder.setMessage(testList.get(position));
+                        builder.setIcon(R.drawable.ic_negativ);
                         builder.setPositiveButton(
                                 "OK", this::onClick);
                         builder.show();

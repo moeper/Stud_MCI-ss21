@@ -54,7 +54,7 @@
     </fragment>
     <fragment
         android:id="@+id/checkinrenewalFragment2"
-        android:name="com.example.kundenapp.checkinrenewalFragment"
+        android:name="com.example.kundenapp.ui.dashboard.checkinrenewalFragment"
         android:label="fragment_checkinrenewal"
         tools:layout="@layout/fragment_checkinrenewal" >
         <action

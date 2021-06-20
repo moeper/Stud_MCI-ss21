@@ -38,6 +38,7 @@ public class CheckinFragment extends Fragment {
         binding.acceptId4.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 state.checkin_active = true;
+                state.checkin_duration = 30;
                 Navigation.findNavController(v).navigate(R.id.action_checkinFragment_to_checkinsFragment);
             }
         });

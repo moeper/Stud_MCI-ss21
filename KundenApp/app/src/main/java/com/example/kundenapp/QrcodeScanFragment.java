@@ -43,7 +43,7 @@ public class QrcodeScanFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        handler.postDelayed(runnable, 2000);
+        handler.postDelayed(runnable, 1000);
         return inflater.inflate(R.layout.fragment_qrcode_scan, container, false);
     }
 }

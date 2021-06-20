@@ -58,7 +58,8 @@ public class CheckinsFragment extends Fragment {
             //((TextView) root.findViewById(R.id.textView35)).setVisibility(View.VISIBLE);
             ((TextView) root.findViewById(R.id.textView35)).setText("H&M - Köln");
             ((TextView) root.findViewById(R.id.textView36)).setVisibility(View.VISIBLE);
-            ((TextView) root.findViewById(R.id.textView37)).setVisibility(View.VISIBLE);
+            ((TextView) root.findViewById(R.id.textView37)).setText(state.checkin_duration + " Minuten");
+            ((TextView) root.findViewById(R.id.textView37)).setVisibility(View.VISIBLE);// duration
             ((TextView) root.findViewById(R.id.textView38)).setVisibility(View.VISIBLE);
             ((TextView) root.findViewById(R.id.textView24)).setVisibility(View.VISIBLE);
             ((TextView) root.findViewById(R.id.textView39)).setVisibility(View.VISIBLE);

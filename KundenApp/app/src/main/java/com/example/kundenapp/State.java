@@ -6,6 +6,6 @@ public class State {
 
         public State(){
                 checkin_active = false;
-                checkin_duration = 0;
+                checkin_duration = 30;
         }
 }

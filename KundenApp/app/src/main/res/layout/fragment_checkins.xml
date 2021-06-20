@@ -35,9 +35,9 @@
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="248dp"
+        android:layout_marginBottom="224dp"
         android:background="@drawable/layout_bg_round"
-        android:text="Verlängern"
+        android:text="Verlängern / beenden"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:backgroundTint="#5DB075"
@@ -142,14 +142,14 @@
         android:id="@+id/textView40"
         android:layout_width="271dp"
         android:layout_height="118dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginBottom="27dp"
         android:gravity="center"
         android:text='Starten Sie einen neuen Check-in mittels des Buttons "Neuen Check-in starten" und fotografieren Sie den im Ladenlokal ausgestellten QR-Code'
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/acceptId5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.205"
-        app:layout_constraintStart_toEndOf="@+id/imageView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+        app:layout_constraintStart_toEndOf="@+id/imageView10" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -157,9 +157,9 @@
         android:layout_height="79dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginBottom="50dp"
         android:src="@drawable/icons8_licht_an_100"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+        app:layout_constraintBottom_toTopOf="@+id/acceptId5"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

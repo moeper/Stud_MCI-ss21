@@ -63,6 +63,7 @@ public class HomeFragment extends Fragment {
     public void openActivity(){
         Intent intent = new Intent(getContext(), FaqActivity.class);
         startActivity(intent);
+
     }
 
     @Override

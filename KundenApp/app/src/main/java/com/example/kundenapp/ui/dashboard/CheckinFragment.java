@@ -9,15 +9,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.kundenapp.MyApp;
 import com.example.kundenapp.R;
+import com.example.kundenapp.State;
 import com.example.kundenapp.databinding.FragmentCheckinBinding;
-import com.example.kundenapp.databinding.FragmentHomeBinding;
+
 
 
 public class CheckinFragment extends Fragment {
+
     FragmentCheckinBinding binding;
+    State state;
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        state = ((MyApp)getActivity().getApplication()).getState();
+
 
     binding = FragmentCheckinBinding.inflate(inflater, container, false);
     View root = binding.getRoot();
@@ -29,9 +37,12 @@ public class CheckinFragment extends Fragment {
 
         binding.acceptId4.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
+                state.checkin_active = true;
                 Navigation.findNavController(v).navigate(R.id.action_checkinFragment_to_checkinsFragment);
             }
         });
+
+
     }
 
 

@@ -36,7 +36,7 @@
         tools:layout="@layout/fragment_testnegativ" />
     <fragment
         android:id="@+id/blankFragment"
-        android:name="com.example.kundenapp.ui.home.BlankFragment"
+        android:name="com.example.kundenapp.ui.home.CoronaTestsFragment"
         android:label="fragment_blank"
-        tools:layout="@layout/fragment_blank" />
+        tools:layout="@layout/fragment_coronatests" />
 </navigation>

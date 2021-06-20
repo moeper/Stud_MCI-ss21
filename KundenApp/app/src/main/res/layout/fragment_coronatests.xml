@@ -4,7 +4,7 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.BlankFragment">
+    tools:context=".ui.home.CoronaTestsFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

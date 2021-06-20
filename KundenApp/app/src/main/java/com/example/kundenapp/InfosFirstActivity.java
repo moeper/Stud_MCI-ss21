@@ -8,12 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class InfosFirst extends AppCompatActivity {
+public class InfosFirstActivity extends AppCompatActivity {
 
     Button acceptBut;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
         setContentView(R.layout.activity_infos_first);
         acceptBut = findViewById(R.id.acceptBut);
 
@@ -27,7 +29,7 @@ public class InfosFirst extends AppCompatActivity {
 
     }
     public void openActivity(){
-        Intent intent = new Intent(this, InfosFirst.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

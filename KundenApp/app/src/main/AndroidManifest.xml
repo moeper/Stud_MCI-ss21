@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KundenApp">
-        <activity android:name=".InfosFirst"></activity>
+        <activity android:name=".InfosFirstActivity"></activity>
         <activity android:name=".FirstStartActivity" />
         <activity android:name=".TestmeActivity" />
         <activity

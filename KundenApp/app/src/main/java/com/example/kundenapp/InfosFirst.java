@@ -1,26 +1,21 @@
 package com.example.kundenapp;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-
-public class PrivacyActivity2 extends AppCompatActivity {
+public class InfosFirst extends AppCompatActivity {
 
     Button acceptBut;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
-        setContentView(R.layout.activity_privacy2);
-
-        acceptBut = findViewById(R.id.acceptId);
+        setContentView(R.layout.activity_infos_first);
+        acceptBut = findViewById(R.id.acceptBut);
 
         acceptBut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +23,7 @@ public class PrivacyActivity2 extends AppCompatActivity {
                 openActivity();
             }
         });
+
 
     }
     public void openActivity(){

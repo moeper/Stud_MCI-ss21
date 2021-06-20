@@ -31,7 +31,7 @@ public class PrivacyActivity2 extends AppCompatActivity {
 
     }
     public void openActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, FirstStartActivity.class);
         startActivity(intent);
     }
 }

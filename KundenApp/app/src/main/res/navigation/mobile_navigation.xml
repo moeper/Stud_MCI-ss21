@@ -31,12 +31,51 @@
         tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/fragment_testnegativ"
-        android:name="com.example.kundenapp.ui.home.TestnegativFragment"
+        android:name="com.example.kundenapp.ui.notifications.TestmeFragment"
         android:label="fragment_testnegativ"
-        tools:layout="@layout/fragment_testnegativ" />
+        tools:layout="@layout/fragment_testme" />
     <fragment
         android:id="@+id/blankFragment"
         android:name="com.example.kundenapp.ui.home.CoronaTestsFragment"
         android:label="fragment_blank"
         tools:layout="@layout/fragment_coronatests" />
+    <fragment
+        android:id="@+id/checkinFragment"
+        android:name="com.example.kundenapp.ui.dashboard.CheckinFragment"
+        android:label="fragment_checkin"
+        tools:layout="@layout/fragment_checkin" >
+        <action
+            android:id="@+id/action_checkinFragment_to_checkinsFragment"
+            app:destination="@id/checkinsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkinrenewalFragment2"
+        android:name="com.example.kundenapp.checkinrenewalFragment"
+        android:label="fragment_checkinrenewal"
+        tools:layout="@layout/fragment_checkinrenewal" >
+        <action
+            android:id="@+id/action_checkinrenewalFragment2_to_checkinsFragment"
+            app:destination="@id/checkinsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkinsFragment"
+        android:name="com.example.kundenapp.ui.dashboard.CheckinsFragment"
+        android:label="fragment_checkins"
+        tools:layout="@layout/fragment_checkins" >
+        <action
+            android:id="@+id/action_checkinsFragment_to_checkinrenewalFragment2"
+            app:destination="@id/checkinrenewalFragment2" />
+        <action
+            android:id="@+id/action_checkinsFragment_to_qrcodeScanFragment"
+            app:destination="@id/qrcodeScanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qrcodeScanFragment"
+        android:name="com.example.kundenapp.QrcodeScanFragment"
+        android:label="fragment_qrcode_scan"
+        tools:layout="@layout/fragment_qrcode_scan" >
+        <action
+            android:id="@+id/action_qrcodeScanFragment_to_checkinFragment"
+            app:destination="@id/checkinFragment" />
+    </fragment>
 </navigation>

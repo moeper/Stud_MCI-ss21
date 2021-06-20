@@ -38,4 +38,10 @@
     <style name="Theme.KundenApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.KundenApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/AppGruenDunkel</item>
+        <item name="android:textColorSecondary">@color/AppGruenDunkel</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

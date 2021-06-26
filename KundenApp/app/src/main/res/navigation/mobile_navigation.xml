@@ -37,7 +37,11 @@
         android:id="@+id/fragment_testnegativ"
         android:name="com.example.kundenapp.ui.notifications.TestmeFragment"
         android:label="fragment_testnegativ"
-        tools:layout="@layout/fragment_testme" />
+        tools:layout="@layout/fragment_testme" >
+        <action
+            android:id="@+id/action_fragment_testnegativ_to_navigation_notifications"
+            app:destination="@id/navigation_notifications" />
+    </fragment>
     <fragment
         android:id="@+id/blankFragment"
         android:name="com.example.kundenapp.ui.home.CoronaTestsFragment"
@@ -54,7 +58,7 @@
     </fragment>
     <fragment
         android:id="@+id/checkinrenewalFragment2"
-        android:name="com.example.kundenapp.ui.dashboard.checkinrenewalFragment"
+        android:name="com.example.kundenapp.ui.dashboard.CheckinrenewalFragment"
         android:label="fragment_checkinrenewal"
         tools:layout="@layout/fragment_checkinrenewal" >
         <action

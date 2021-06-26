@@ -18,6 +18,7 @@
         android:layout_marginEnd="150dp"
         android:layout_marginRight="150dp"
         android:text="Häufige Fragen"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

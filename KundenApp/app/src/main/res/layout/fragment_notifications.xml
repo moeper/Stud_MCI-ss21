@@ -12,8 +12,10 @@
         android:id="@+id/viewList"
         android:layout_width="match_parent"
         android:layout_height="466dp"
+        android:layout_above="@+id/newTest"
         android:layout_below="@+id/textView"
-        android:layout_marginTop="19dp">
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="99dp">
 
 
     </ListView>
@@ -21,20 +23,22 @@
     <Button
         android:id="@+id/newTest"
         android:layout_width="146dp"
-        android:layout_height="52dp"
+        android:layout_height="wrap_content"
 
-        android:layout_below="@+id/viewList"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="133dp"
-        android:layout_marginLeft="133dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginRight="132dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/layout_bg_round"
         android:text="Neuer Test"
         android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:backgroundTint="#5DB075" />
 
     <TextView
@@ -48,13 +52,13 @@
         android:layout_alignParentRight="true"
         android:layout_marginStart="114dp"
         android:layout_marginLeft="114dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="114dp"
         android:layout_marginRight="114dp"
         android:gravity="center"
         android:text="Corona-Tests"
         android:textColor="#000000"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
 

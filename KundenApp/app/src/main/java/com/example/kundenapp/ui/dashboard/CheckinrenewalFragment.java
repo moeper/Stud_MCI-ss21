@@ -1,7 +1,9 @@
 package com.example.kundenapp.ui.dashboard;
 
+import android.content.Context;
 import android.os.Bundle;
 
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
@@ -17,11 +19,12 @@ import com.example.kundenapp.databinding.FragmentCheckinrenewalBinding;
 import com.example.kundenapp.databinding.FragmentCheckinsBinding;
 
 
-public class checkinrenewalFragment extends Fragment {
+public class CheckinrenewalFragment extends Fragment {
     private FragmentCheckinrenewalBinding binding;
     private State state;
     private Integer durationextention;
     View root;
+    private Integer buttonFocus;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,17 @@ public class checkinrenewalFragment extends Fragment {
         return root;
     }
 
+    private void changeButtonColor(Integer id, View v){
+        if(buttonFocus != null) {
+            ((Button) root.findViewById(buttonFocus)).
+                    setBackgroundTintList(ContextCompat.getColorStateList(v.getContext(), R.color.AppGrey));
+        }
+
+        buttonFocus = id;
+        ((Button) root.findViewById(id)).
+                setBackgroundTintList(ContextCompat.getColorStateList(v.getContext(), R.color.AppGruenDunkel));
+    }
+
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
@@ -48,17 +62,19 @@ public class checkinrenewalFragment extends Fragment {
                 }else{
                     state.checkin_duration += durationextention;
                 }
-
+                buttonFocus = null;
                 Navigation.findNavController(v).navigate(R.id.action_checkinrenewalFragment2_to_checkinsFragment);
 
             }
         });
 
+
+
         // 10min
         binding.acceptId101.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 durationextention = 10;
-                //((Button) root.findViewById(R.id.acceptId101)).setBackgroundColor(0xFF5DB075);
+                changeButtonColor(R.id.acceptId101, v);
             }
         });
 
@@ -66,7 +82,7 @@ public class checkinrenewalFragment extends Fragment {
         binding.acceptId102.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 durationextention = 30;
-                //((Button) root.findViewById(R.id.acceptId102)).setBackgroundColor(0xFF5DB075);
+                changeButtonColor(R.id.acceptId102, v);
             }
         });
 
@@ -74,7 +90,7 @@ public class checkinrenewalFragment extends Fragment {
         binding.acceptId103.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 durationextention = 60;
-                //((Button) root.findViewById(R.id.acceptId103)).setBackgroundColor(0xFF5DB075);
+                changeButtonColor(R.id.acceptId103, v);
             }
         });
 
@@ -82,14 +98,14 @@ public class checkinrenewalFragment extends Fragment {
         binding.acceptId104.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 durationextention = 180;
-                //((Button) root.findViewById(R.id.acceptId104)).setBackgroundColor(0xFF5DB075);
+                changeButtonColor(R.id.acceptId104, v);
             }
         });
         // ende
         binding.acceptId105.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 durationextention = 0;
-                //((Button) root.findViewById(R.id.acceptId105)).setBackgroundColor(0xFF5DB075);
+                changeButtonColor(R.id.acceptId105, v);
             }
         });
     }

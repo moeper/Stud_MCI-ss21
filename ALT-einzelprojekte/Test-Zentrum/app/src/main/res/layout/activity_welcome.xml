@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hintergrund"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/welcomeTextId"
+        android:layout_below="@+id/testZrntrumId"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="213dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="32dp"
+        app:srcCompat="@drawable/corona" />
+
+    <TextView
+        android:id="@+id/welcomeTextId"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="64dp"
+        android:gravity="center"
+        android:text="Willkommen bei der Warn-App"
+        android:textColor="#5DB075"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/appNameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="54dp"
+        android:gravity="center"
+        android:text="Corona-Warn App"
+        android:textColor="#5DB075"
+        android:textSize="36sp"
+        android:textStyle="bold"
+ />
+
+    <TextView
+        android:id="@+id/testZrntrumId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appNameId"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="126dp"
+        android:text="Test-Zentrum"
+        android:textColor="#5DB075"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+/>
+</RelativeLayout>

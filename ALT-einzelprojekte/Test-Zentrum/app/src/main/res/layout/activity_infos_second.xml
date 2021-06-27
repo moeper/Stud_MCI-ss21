@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hintergrund"
+    tools:context=".InfosFirstActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="212dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="99dp"
+        android:gravity="center"
+        android:text="Funktionsweise"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/nextId2"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="17dp"
+        android:background="#5DB075"
+        android:text="Weiter"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="3.1- Um ein neuen Test einzutragen, scannen Sie den QR-Code von der Person, der sich testen lässt, dann scannen Sie den QR-Code von den Test, anschließend drücken Sie auf Speichern, somit haben Sie ein neuen Test zu der Liste hinzugefügt. Falls Sie doch nicht speichern möchten drücken Sie einfach auf Abbruch"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextId2"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="314dp"
+        android:gravity="center"
+        android:text="5- Für mehr Informationen können Sie jeder Zeit Ganz Oben rechts die drei Punkte tippen und dann wählen Sie die angezeigten Optionen wie Häufige Fragen, Über die App, und Funktionsweise"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</RelativeLayout>

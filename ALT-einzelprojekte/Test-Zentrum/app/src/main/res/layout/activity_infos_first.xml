@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hintergrund"
+    tools:context=".InfosFirstActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="212dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="99dp"
+        android:gravity="center"
+        android:text="Funktionsweise"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/nextId1"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="17dp"
+        android:background="#5DB075"
+        android:text="Weiter"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="Diese App ist für die Test-Zentren gedacht, um die Ergebnisse der Tests in der App einzutragen. Das Ergebnis wird sofort an den getesteten Person weitergeleitet, nachdem der Tester das In der App eingetragen hat."
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="197dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="17dp"
+        android:gravity="center"
+        android:text="1- Nachdem Sie die Datenschutz akzeptiert haben, und die schritte verfolgt haben, landen Sie auf der Startseite, wo Sie alle Tests, die Sie eingetragen haben. Zu jedem Test sehen Sie den Test-Id, Datum sowie Das Ergebnis, falls der Test noch nicht bewertet wurde, wird dieser mit In Bearbeitung vermerkt, Sie können das auch an das Symbol likns zu jeden Test"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="19dp"
+        android:gravity="center"
+        android:text="2- Ganz oben rechts sehen Sie das Suche-Symbol, damit können sie nach jedem Test suchen mit hilfe der Test-ID."
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="19dp"
+        android:gravity="center"
+        android:text="3- mit dem Button ganz unten können Sie eine neue Test hinzufügen"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nextId1"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="45dp"
+        android:text="4- Wenn Sie einen Test bewerten möchten, das geht ganz einfach, tippen Sie einfach auf das zu bewertenden Test ein. Ein Test können Sie als Negativ oder Positiv beweten"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+</RelativeLayout>

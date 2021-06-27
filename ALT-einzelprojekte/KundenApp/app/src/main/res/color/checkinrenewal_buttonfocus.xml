@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <Item
+        android:state_focused="false"
+        android:state_pressed="true"
+        android:color="#FF5DB075" />
+
+    <Item
+        android:state_focused="true"
+        android:state_pressed="true"
+        android:color="#AFAFAF" />
+    <Item
+        android:state_focused="false"
+        android:state_pressed="false"
+        android:color="#AFAFAF" />
+
+
+        <solid android:color="#FFFFFF"/>
+        <stroke android:width="3dp" android:color="#B1BCBE" />
+        <corners android:radius="25dp"/>
+        <padding android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="0dp" />
+
+</selector>
+

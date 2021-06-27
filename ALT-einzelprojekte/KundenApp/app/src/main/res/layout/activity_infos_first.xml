@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hintergrund"
+    tools:context=".InfosFirstActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="212dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="99dp"
+        android:gravity="center"
+        android:text="Funktionsweise"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/acceptBut"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/layout_bg_round"
+        android:text="Weiter"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="Diese App ist für die Besucher des Einzelhandel gedacht, sie kann Ihnen wahren falls Sie in Kontakt waren mit eine Infizierter auf eine Veranstaltung (Einzelhandel).  "
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="370dp"
+        android:layout_height="164dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="22dp"
+        android:gravity="center"
+        android:text="1- Nachdem Sie die Datenschutz akzeptiert haben, und die schritte verfolgt haben, landen Sie auf der Startseite, wo Ihre Wahrn-Status sehen können, wir haben Ihnen auch die aktuelle Regelen dadrunter zur verfügung gestellt."
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="19dp"
+        android:gravity="center"
+        android:text="2- Ganz oben rechts sehen Sie das i-Symbol, damit können Sie die häufige Fragen anzeigen lassen"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="369dp"
+        android:layout_height="203dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="45dp"
+        android:gravity="center"
+        android:text="3- Unten haben Sie ein Menü mit drei Button, das erste ist für die Startseite. Wenn Sie auf das zweite klicken haben Sie die Möglichkeit in einem Laden einzuchecken und auzuchecken. Sie können eine Aufenthaltszeit angeben, falls diese abgelaufen ist und Sie sind noch nicht ausgecheckt bekommen Sie eine Benachrichtigung, dass Sie die Zeit verlängern oder beenden d.h. auschecken"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+</RelativeLayout>

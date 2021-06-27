@@ -1,0 +1,4 @@
+rootProject.name = "CoronaWarnApp2"
+include ':KundenApp'
+include ':TestZentrumApp'
+include ':EinzelhandelApp'

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActivityQrSeite" android:background="@drawable/background">
+
+    <Button
+            android:text="QR Code Erstellen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/buttonQrErstellen"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_centerVertical="true"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.819" android:textSize="25sp" android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" android:layout_marginTop="436dp" android:layout_centerHorizontal="true"
+            android:layout_marginStart="34dp" android:layout_marginLeft="34dp" android:layout_alignParentLeft="true"/>
+    <TextView
+            android:text="QR Code Erstellen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView" tools:layout_editor_absoluteY="46dp"
+            tools:layout_editor_absoluteX="137dp" android:textSize="30sp" android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" android:layout_marginTop="11dp" android:layout_marginStart="56dp"
+            android:layout_centerHorizontal="true" android:layout_alignParentLeft="true"
+            android:layout_marginLeft="56dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" android:layout_marginTop="97dp" android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp" android:layout_marginStart="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Flaeche (m2)" android:id="@+id/flaeche" android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" android:layout_marginTop="167dp" android:layout_marginStart="0dp"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Typische Aufenthaltsdauer (Minute)" android:id="@+id/dauer" android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" android:layout_marginTop="245dp" android:layout_marginStart="2dp"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ort" android:id="@+id/ort" android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" android:layout_marginTop="323dp" android:layout_marginStart="0dp"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Maximale Kundenanzahl" android:id="@+id/kundenAnzahl" android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+            android:text="Startseite"
+            android:drawableTop="@drawable/startseite"
+            android:layout_width="109dp"
+            android:layout_height="89dp" android:layout_alignParentStart="true"
+            android:layout_marginStart="-2dp" android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true" android:layout_marginBottom="-4dp" android:layout_marginLeft="-2dp"
+            android:id="@+id/startseite" android:textSize="10sp"/>
+    <Button
+            android:text="QR-Code"
+            android:drawableTop="@drawable/qr"
+            android:background="@drawable/green"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" android:id="@+id/qrseite" android:layout_marginBottom="-1dp"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+            android:layout_marginRight="120dp" android:layout_marginEnd="120dp" android:layout_centerHorizontal="true"
+            android:textSize="10sp"/>
+
+    <Button
+        android:id="@+id/verlauf"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginBottom="-5dp"
+        android:drawableTop="@drawable/verlauf"
+        android:text="info"
+        android:textSize="10sp" />
+</RelativeLayout>

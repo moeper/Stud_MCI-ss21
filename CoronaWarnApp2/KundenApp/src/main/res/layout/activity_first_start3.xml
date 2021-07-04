@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/dat2" />
 
     <Button
-        android:id="@+id/acceptId"
+        android:id="@+id/acceptId403"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -80,8 +80,15 @@
         android:id="@+id/imageView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/screenshot_help"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="351dp" />
+        android:layout_marginTop="27dp"
+        android:background="@color/white"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView42"
+        app:srcCompat="@drawable/screenshot_help" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

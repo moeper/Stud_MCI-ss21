@@ -35,7 +35,7 @@
         android:layout_height="0dp"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="@id/acceptId"
+        app:layout_constraintBottom_toBottomOf="@id/acceptId401"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_max="wrap"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +61,7 @@
 
 
     <Button
-        android:id="@+id/acceptId"
+        android:id="@+id/acceptId401"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

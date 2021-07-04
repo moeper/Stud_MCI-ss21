@@ -51,7 +51,7 @@
         android:id="@+id/checkinFragment"
         android:name="com.example.kundenapp.ui.dashboard.CheckinFragment"
         android:label="fragment_checkin"
-        tools:layout="@layout/fragment_checkin" >
+        tools:layout="@layout/fragment_qrcodeanzeigen" >
         <action
             android:id="@+id/action_checkinFragment_to_checkinsFragment"
             app:destination="@id/checkinsFragment" />

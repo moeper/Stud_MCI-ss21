@@ -18,7 +18,7 @@
         android:gravity="center"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
-        android:text="Diese App ist für die Besucher des Einzelhandel gedacht, sie kann Sie warnen falls Sie Kontakt mit einer Infizierten Person auf einer Veranstaltung (Einzelhandel) hatten.  "
+        android:text="Diese App ist für die Einzelhändler gedacht, mit dieser App können Einzelhändler QR-Code erstellen, damit diese von den Besucher eingescannt werden, um die Kontakt Verfolgung zu optimieren.  "
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,20 +78,20 @@
 
     </TextView>
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:gravity="center"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:text="Sie bekommen eine eindeutuge  Identifikationsnummer,  mit dieser ID können wir Sie warnen,  falls Sie im Kontakt mit einer  infizierten Person waren.  Weitere Informationen erhalten  Sie im FAQ"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView22"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        android:gravity="center"-->
+<!--        android:paddingLeft="30dp"-->
+<!--        android:paddingRight="30dp"-->
+<!--        android:text="Sie bekommen eine eindeutuge  Identifikationsnummer,  mit dieser ID können wir Sie warnen,  falls Sie im Kontakt mit einer  infizierten Person waren.  Weitere Informationen erhalten  Sie im FAQ"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView41" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

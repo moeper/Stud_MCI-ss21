@@ -48,11 +48,11 @@
         android:layout_below="@+id/textView2"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="18dp"
         android:gravity="center"
-        android:text="Diese App ist für die Besucher des Einzelhandel gedacht, sie kann Ihnen wahren falls Sie in Kontakt waren mit eine Infizierter auf eine Veranstaltung (Einzelhandel).  "
+        android:text="Mit der App können Einzelhändler QR-Code erstellen. Die Kunden können den erstellten QR-Code scannen. Die Einzelhändler können sehen wie viele Kunden sich im Laden befinden, jedes mal, wenn eine Kunden den QR-Code scannt wird die Anzahl der Kunden hoch gezählt."
         android:textColor="#000000"
         android:textSize="18sp" />
 
@@ -67,7 +67,7 @@
         android:layout_marginTop="14dp"
         android:layout_marginEnd="22dp"
         android:gravity="center"
-        android:text="1- Nachdem Sie die Datenschutz akzeptiert haben, und die schritte verfolgt haben, landen Sie auf der Startseite, wo Ihre Wahrn-Status sehen können, wir haben Ihnen auch die aktuelle Regelen dadrunter zur verfügung gestellt."
+        android:text="1- Nachdem Sie die Datenschutz akzeptiert haben, und die schritte verfolgt haben, landen Sie auf der Startseite, wo Sie den Wahrn-Status Ihres Ladenlokales sehen können, wir haben Ihnen auch die aktuelle Regelen dadrunter zur verfügung gestellt."
         android:textColor="#000000"
         android:textSize="18sp" />
 

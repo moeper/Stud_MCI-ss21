@@ -9,18 +9,17 @@
 
     <TextView
         android:id="@+id/textView42"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="399dp"
+        android:layout_height="166dp"
         android:layout_below="@+id/textView4"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="52dp"
         android:gravity="center"
-        android:text='4. Unten in der App wird ein Menü mit drei Buttons angezeigt, der erste führt immer zur Startseite. Wenn Sie auf das zweiten "QR-Code" klicken haben Sie die Möglichkeit in einem Laden einzuchecken und auzuchecken. Über den dritten button "Tests" können Corona Tests registriert werden.'
+        android:text='4. Unten in der App wird ein Menü mit drei Buttons angezeigt, der erste führt immer zur Startseite. Wenn Sie auf das zweiten "QR-Code" klicken haben Sie die Möglichkeit einen QR-Code zu erstellen. Über den dritten button "Kundenanzahl" können Sie die Aktuelle Kundenanzahl, die sich im Laden befinden.'
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
 

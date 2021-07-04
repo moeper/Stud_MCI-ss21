@@ -5,61 +5,106 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/hintergrund"
     tools:context=".MainActivity">
-
-    <ListView
-        android:id="@+id/viewList"
-        android:layout_width="match_parent"
-        android:layout_height="466dp"
-        android:layout_above="@+id/newTest"
-        android:layout_below="@+id/textView"
-        android:layout_marginTop="19dp"
-        android:layout_marginBottom="99dp">
-
-
-    </ListView>
-
-    <Button
-        android:id="@+id/newTest"
-        android:layout_width="146dp"
-        android:layout_height="wrap_content"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/layout_bg_round"
-        android:text="Neuer Test"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:backgroundTint="#5DB075" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="183dp"
+        android:layout_width="214dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="114dp"
-        android:layout_marginLeft="114dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="114dp"
-        android:layout_marginRight="114dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
         android:gravity="center"
-        android:text="Corona-Tests"
+        android:text="Aktuelle Kundenanzahl"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="68dp"
+        android:layout_height="123dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="479dp"
+        android:layout_toStartOf="@+id/imageView9"
+        android:layout_toLeftOf="@+id/imageView9"
+        app:srcCompat="@drawable/kunde1" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="67dp"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="449dp"
+        android:layout_toStartOf="@+id/imageView8"
+        android:layout_toLeftOf="@+id/imageView8"
+        app:srcCompat="@drawable/kunde3" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="66dp"
+        android:layout_height="125dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="441dp"
+        app:srcCompat="@drawable/kunde2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="253dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="78dp"
+        android:background="@drawable/layout_bg_round"
+        android:text="00"
+        android:textColor="#FFFFFF"
+        android:textSize="120sp"
+        app:backgroundTint="#5DB075" />
+
+    <TextView
+        android:id="@+id/datumTextViewId"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="153dp"
+        android:layout_marginLeft="153dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="24sp" />
 
 
 </RelativeLayout>

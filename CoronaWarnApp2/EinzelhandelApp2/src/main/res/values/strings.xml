@@ -2,7 +2,7 @@
     <string name="app_name">KundenApp</string>
     <string name="title_home">Startseite</string>
     <string name="title_dashboard">QR-Code</string>
-    <string name="title_notifications">Tests</string>
+    <string name="title_notifications">Kundenanzahl</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 

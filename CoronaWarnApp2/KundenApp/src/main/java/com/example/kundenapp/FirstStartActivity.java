@@ -17,7 +17,7 @@ public class FirstStartActivity extends AppCompatActivity {
         actionBar.hide();
         setContentView(R.layout.activity_first_start1);
 
-        Button button = findViewById(R.id.acceptId);
+        Button button = findViewById(R.id.acceptId401);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,7 +28,7 @@ public class FirstStartActivity extends AppCompatActivity {
 
     }
     public void openActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, FirstStart2Activity.class);
         startActivity(intent);
     }
 }

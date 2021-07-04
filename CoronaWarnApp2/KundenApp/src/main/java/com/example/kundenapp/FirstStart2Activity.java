@@ -8,21 +8,18 @@ import android.widget.Button;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PrivacyActivity2 extends AppCompatActivity {
-
-    Button acceptBut;
-
+public class FirstStart2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
-        setContentView(R.layout.activity_privacy2);
+        setContentView(R.layout.activity_first_start2);
 
-        acceptBut = findViewById(R.id.acceptId401);
+        Button button = findViewById(R.id.acceptId402);
 
-        acceptBut.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivity();
@@ -31,7 +28,7 @@ public class PrivacyActivity2 extends AppCompatActivity {
 
     }
     public void openActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, FirstStart3Activity.class);
         startActivity(intent);
     }
 }

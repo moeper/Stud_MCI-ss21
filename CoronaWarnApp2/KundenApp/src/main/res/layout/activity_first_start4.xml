@@ -16,7 +16,9 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="52dp"
         android:gravity="center"
-        android:text='4. Unten in der App wird ein Menü mit drei Buttons angezeigt, der erste führt immer zur Startseite. Wenn Sie auf das zweiten "QR-Code" klicken haben Sie die Möglichkeit in einem Laden einzuchecken und auzuchecken. Über den dritten button "Tests" können Corona Tests registriert werden.'
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text='4. Unten in der App wird ein Menü mit drei Buttons angezeigt, der erste führt immer zur Startseite. Wenn Sie auf den zweiten Punkt "QR-Code" klicken, haben Sie die Möglichkeit in einem Laden einzuchecken und auzuchecken. Über den dritten Button "Tests" können Corona-Tests registriert werden.'
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/dat2" />
 
     <Button
-        android:id="@+id/acceptId"
+        android:id="@+id/acceptId404"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -81,6 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="74dp"
+        android:background="@color/white"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
         app:layout_constraintEnd_toEndOf="parent"

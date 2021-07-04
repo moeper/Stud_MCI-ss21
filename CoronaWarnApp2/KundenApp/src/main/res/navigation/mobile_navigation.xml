@@ -53,8 +53,8 @@
         android:label="fragment_checkin"
         tools:layout="@layout/fragment_checkin" >
         <action
-            android:id="@+id/action_checkinFragment_to_checkinsFragment"
-            app:destination="@id/checkinsFragment" />
+            android:id="@+id/action_checkinFragment_to_checkindurationFragment"
+            app:destination="@id/checkindurationFragment" />
     </fragment>
     <fragment
         android:id="@+id/checkinrenewalFragment2"
@@ -85,5 +85,13 @@
         <action
             android:id="@+id/action_qrcodeScanFragment_to_checkinFragment"
             app:destination="@id/checkinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkindurationFragment"
+        android:name="com.example.kundenapp.ui.dashboard.CheckindurationFragment"
+        android:label="CheckindurationFragment" >
+        <action
+            android:id="@+id/action_checkindurationFragment_to_checkinsFragment"
+            app:destination="@id/checkinsFragment" />
     </fragment>
 </navigation>

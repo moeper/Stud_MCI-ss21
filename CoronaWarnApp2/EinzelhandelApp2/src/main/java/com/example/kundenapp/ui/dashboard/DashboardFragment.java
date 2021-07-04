@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -22,10 +24,38 @@ public class DashboardFragment extends Fragment {
     private DashboardViewModel dashboardViewModel;
     private FragmentDashboardBinding binding;
 
+    int flaeche, dauer;
+    String name;
+
+    EditText inputFlaeche;
+    EditText inputDauer;
+    EditText inputName;
+
+
+    Button button;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        inputFlaeche = binding.input1;
+        inputName = binding.input3;
+        inputDauer = binding.input2;
+
+        button = binding.erstellen;
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                flaeche = Integer.parseInt(inputFlaeche.getText().toString());
+                dauer = Integer.parseInt(inputDauer.getText().toString());
+                name = inputName.getText().toString();
+            }
+        });
+
+
+
+
         return root;
     }
 

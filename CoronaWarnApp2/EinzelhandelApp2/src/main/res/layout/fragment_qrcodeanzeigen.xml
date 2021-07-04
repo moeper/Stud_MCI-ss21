@@ -5,7 +5,8 @@
     android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dashboard.CheckinFragment">
+    android:background="@drawable/hintergrund"
+    tools:context=".ui.dashboard.qrcodeanzeigen">
 
     <!-- TODO: Update blank fragment layout -->
     <Button
@@ -24,8 +25,7 @@
         app:backgroundTint="#5DB075"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <TextView
         android:id="@+id/textView27"
@@ -35,18 +35,31 @@
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="75dp" />
+        tools:layout_editor_absoluteY="76dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="382dp"
         android:layout_height="349dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="68dp"
         android:src="@drawable/qr1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/layout_bg_round"
+        android:text="QR-Code als PDF herunterladen"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        tools:layout_editor_absoluteX="53dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

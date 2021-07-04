@@ -7,6 +7,40 @@
     android:background="@drawable/hintergrund"
     tools:context=".FirstStartActivity">
 
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="370dp"
+        android:layout_height="164dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="3. Auf der Startseite ganz oben rechts sehen Sie das i-Symbol, damit können Sie sich die häufigen Fragen anzeigen lassen, um weitere Hilfe zu erhalten."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="212dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="Einführung"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dat2" />
+
     <Button
         android:id="@+id/acceptId"
         android:layout_width="0dp"
@@ -17,7 +51,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/layout_bg_round"
-        android:text="Leg Los!"
+        android:text="Weiter"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:backgroundTint="#5DB075"
@@ -42,19 +76,12 @@
 
     </TextView>
 
-    <TextView
-        android:id="@+id/textView22"
+    <ImageView
+        android:id="@+id/imageView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="241dp"
-        android:gravity="center"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:text="Sie bekommen eine eindeutuge  Identifikationsnummer,  mit dieser ID können wir Sie warnen,  falls Sie im Kontakt mit einer  infizierten Person waren.  Weitere Informationen erhalten  Sie im FAQ"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dat2" />
+        app:srcCompat="@drawable/screenshot_help"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="351dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

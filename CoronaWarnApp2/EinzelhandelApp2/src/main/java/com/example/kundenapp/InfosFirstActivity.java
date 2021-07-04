@@ -8,27 +8,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class FirstStartActivity extends AppCompatActivity {
+public class InfosFirstActivity extends AppCompatActivity {
 
+    Button acceptBut;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
-        setContentView(R.layout.activity_first_start1);
+        setContentView(R.layout.activity_infos_first);
+        acceptBut = findViewById(R.id.acceptBut);
 
-        Button button = findViewById(R.id.acceptId);
-
-        button.setOnClickListener(new View.OnClickListener() {
+        acceptBut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivity();
             }
         });
 
+
     }
     public void openActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, FirstStartActivity.class);
         startActivity(intent);
     }
 }

@@ -56,7 +56,7 @@ public class NotificationsFragment extends Fragment{
         binding = FragmentNotificationsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        binding.datumTextViewId.setText(LocalDateTime.now().toString());
+        //binding.datumTextViewId.setText(LocalDateTime.now().toString());
 
         return root;
     }

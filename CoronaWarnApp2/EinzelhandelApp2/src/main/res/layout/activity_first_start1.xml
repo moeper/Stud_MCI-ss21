@@ -11,10 +11,7 @@
         android:id="@+id/textView41"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="112dp"
         android:gravity="center"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
@@ -30,9 +27,6 @@
         android:id="@+id/textView23"
         android:layout_width="212dp"
         android:layout_height="36dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:layout_marginTop="11dp"
         android:gravity="center"
         android:text="Einführung"
@@ -44,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/dat2" />
 
     <Button
-        android:id="@+id/acceptId"
+        android:id="@+id/acceptId01"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -78,7 +72,17 @@
 
     </TextView>
 
-<!--    <TextView-->
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="245dp"
+        android:layout_height="424dp"
+        app:layout_constraintBottom_toTopOf="@+id/acceptId01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView41"
+        app:srcCompat="@drawable/hh" />
+
+    <!--    <TextView-->
 <!--        android:id="@+id/textView22"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->

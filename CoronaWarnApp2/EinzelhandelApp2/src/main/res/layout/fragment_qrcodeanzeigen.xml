@@ -9,57 +9,72 @@
     tools:context=".ui.dashboard.qrcodeanzeigen">
 
     <!-- TODO: Update blank fragment layout -->
-    <Button
-        android:id="@+id/acceptId4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/layout_bg_round"
-        android:text="Ok"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:backgroundTint="#5DB075"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="QR-Code"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="76dp"
-        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="382dp"
         android:layout_height="349dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="160dp"
         android:src="@drawable/qr1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/layout_bg_round"
         android:text="QR-Code als PDF herunterladen"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
         tools:layout_editor_absoluteX="53dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Der QR-Code wurde am 08.07.2021 um 14:00"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Der QR-Code ist aktiv!"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="264dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/layout_bg_round"
+        android:text="QR-Code löschen"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        tools:layout_editor_absoluteX="73dp" />
+
+    <TextView
+        android:id="@+id/qrcodeInput"
+        android:layout_width="82dp"
+        android:layout_height="21dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

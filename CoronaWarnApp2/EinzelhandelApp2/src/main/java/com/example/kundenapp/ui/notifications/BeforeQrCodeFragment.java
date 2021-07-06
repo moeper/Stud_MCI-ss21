@@ -1,4 +1,4 @@
-package com.example.kundenapp.ui.home;
+package com.example.kundenapp.ui.notifications;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.example.kundenapp.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link CoronaTestsFragment#newInstance} factory method to
+ * Use the {@link BeforeQrCodeFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CoronaTestsFragment extends Fragment {
+public class BeforeQrCodeFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class CoronaTestsFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public CoronaTestsFragment() {
+    public BeforeQrCodeFragment() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class CoronaTestsFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment BlankFragment.
+     * @return A new instance of fragment BeforeQrCodeFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static CoronaTestsFragment newInstance(String param1, String param2) {
-        CoronaTestsFragment fragment = new CoronaTestsFragment();
+    public static BeforeQrCodeFragment newInstance(String param1, String param2) {
+        BeforeQrCodeFragment fragment = new BeforeQrCodeFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class CoronaTestsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_coronatests, container, false);
+        return inflater.inflate(R.layout.fragment_before_qr_code, container, false);
     }
 }

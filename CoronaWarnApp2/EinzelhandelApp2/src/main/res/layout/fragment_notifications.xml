@@ -5,7 +5,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/hintergrund"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/textView"
@@ -27,62 +29,22 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="68dp"
-        android:layout_height="123dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="603dp"
-        android:layout_toStartOf="@+id/imageView9"
-        android:layout_toLeftOf="@+id/imageView9"
-        app:srcCompat="@drawable/kunde1" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="67dp"
-        android:layout_height="140dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="92dp"
-        android:layout_marginLeft="92dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginRight="11dp"
-        android:layout_marginBottom="562dp"
-        android:layout_toStartOf="@+id/imageView8"
-        android:layout_toLeftOf="@+id/imageView8"
-        app:srcCompat="@drawable/kunde3" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="66dp"
-        android:layout_height="125dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="91dp"
-        android:layout_marginRight="91dp"
-        android:layout_marginBottom="560dp"
-        app:srcCompat="@drawable/kunde2" />
-
     <Button
         android:id="@+id/button2"
         android:layout_width="253dp"
         android:layout_height="175dp"
-        android:layout_below="@+id/textView"
+        android:layout_below="@+id/imageView8"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="280dp"
-        android:layout_marginEnd="78dp"
-        android:layout_marginRight="78dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="-16dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="79dp"
         android:background="@drawable/layout_bg_round"
-        android:text="00"
+        android:text="13"
         android:textColor="#FFFFFF"
         android:textSize="120sp"
         app:backgroundTint="#5DB075" />
@@ -96,15 +58,31 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="153dp"
-        android:layout_marginLeft="153dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginRight="132dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginRight="145dp"
         android:gravity="center"
         android:text="TextView"
         android:textColor="#000000"
         android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="384dp"
+        android:layout_height="464dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        app:srcCompat="@drawable/ee" />
 
 
 </RelativeLayout>

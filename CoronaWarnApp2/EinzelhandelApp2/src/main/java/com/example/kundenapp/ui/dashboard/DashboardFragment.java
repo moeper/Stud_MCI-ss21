@@ -24,8 +24,8 @@ public class DashboardFragment extends Fragment {
     private DashboardViewModel dashboardViewModel;
     private FragmentDashboardBinding binding;
 
-    int flaeche, dauer;
-    String name;
+    public static int flaeche, dauer;
+    public static String name;
 
     EditText inputFlaeche;
     EditText inputDauer;
@@ -34,14 +34,14 @@ public class DashboardFragment extends Fragment {
 
     Button button;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
+    public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        inputFlaeche = binding.input1;
-        inputName = binding.input3;
-        inputDauer = binding.input2;
+        inputFlaeche = binding.inputFlaeche;
+        inputName = binding.inputName;
+        inputDauer = binding.inputDauer;
 
         button = binding.erstellen;
         button.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +50,7 @@ public class DashboardFragment extends Fragment {
                 flaeche = Integer.parseInt(inputFlaeche.getText().toString());
                 dauer = Integer.parseInt(inputDauer.getText().toString());
                 name = inputName.getText().toString();
+                Navigation.findNavController(v).navigate(R.id.action_navigation_dashboard_to_qrcodeanzeigen);
             }
         });
 
@@ -59,24 +60,15 @@ public class DashboardFragment extends Fragment {
         return root;
     }
 
-    /*public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        binding.button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                /*Fragment testnegativeFragment = new TestnegativFragment();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.nav_host_fragment_activity_main, testnegativeFragment);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-
-                Navigation.findNavController(v).navigate(R.id.action_checkinsFragment_to_qrcodeScanFragment);
-
-
-            }
-        });
-    }*/
+//    public void onViewCreated(View view, Bundle savedInstanceState) {
+//        super.onViewCreated(view, savedInstanceState);
+//
+//        button.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                Navigation.findNavController(v).navigate(R.id.action_navigation_dashboard_to_checkinFragment);
+//            }
+//        });
+//    }
 
     @Override
     public void onDestroyView() {

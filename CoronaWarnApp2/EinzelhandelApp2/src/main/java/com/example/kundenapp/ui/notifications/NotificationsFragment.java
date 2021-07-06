@@ -30,8 +30,10 @@ import java.util.List;
 import java.util.UUID;
 /**--------------------------------------------------------**/
 
+import com.example.kundenapp.Global;
 import com.example.kundenapp.R;
 
+import com.example.kundenapp.databinding.FragmentBeforeQrCodeBinding;
 import com.example.kundenapp.databinding.FragmentNotificationsBinding;
 
 import org.jetbrains.annotations.NotNull;
@@ -44,6 +46,7 @@ public class NotificationsFragment extends Fragment{
     TextView textView;
 
     private NotificationsViewModel notificationsViewModel;
+    private FragmentBeforeQrCodeBinding binding1;
     private FragmentNotificationsBinding binding;
 
 
@@ -54,7 +57,12 @@ public class NotificationsFragment extends Fragment{
                 new ViewModelProvider(this).get(NotificationsViewModel.class);
 
         binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+        binding1 = FragmentBeforeQrCodeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        if (Global.isQrCodeCreated()==false){
+            root = binding1.getRoot();
+        }
 
         //binding.datumTextViewId.setText(LocalDateTime.now().toString());
 

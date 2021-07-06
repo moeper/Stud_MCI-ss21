@@ -14,34 +14,25 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.KundenAppNoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">#5DB075</item>
-        <item name="colorPrimaryVariant">#5DB075</item>
-        <item name="colorOnPrimary">#5DB075</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">#5DB075</item>
-        <item name="colorSecondaryVariant">#5DB075</item>
-        <item name="colorOnSecondary">#5DB075</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here.
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>-->
-    </style>
-
     <style name="Theme.KundenApp.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.KundenApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="Theme.KundenApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
     <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
         <item name="colorPrimary">@color/AppGruenDunkel</item>
         <item name="android:textColorSecondary">@color/AppGruenDunkel</item>
         <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Theme.KundenApp.Fullscreen" parent="Theme.KundenApp">
+        <item name="android:actionBarStyle">@style/Widget.Theme.KundenApp.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.CoronaWarnApp2.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
     </style>
 </resources>

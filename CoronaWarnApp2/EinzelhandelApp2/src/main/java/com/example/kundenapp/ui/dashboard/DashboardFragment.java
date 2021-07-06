@@ -1,5 +1,6 @@
 package com.example.kundenapp.ui.dashboard;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,16 +16,20 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
+import com.example.kundenapp.Global;
 import com.example.kundenapp.R;
 import com.example.kundenapp.databinding.FragmentDashboardBinding;
 import com.example.kundenapp.databinding.FragmentHomeBinding;
+import com.example.kundenapp.databinding.FragmentQrcodeanzeigenBinding;
 
 public class DashboardFragment extends Fragment {
 
     private DashboardViewModel dashboardViewModel;
     private FragmentDashboardBinding binding;
+    private FragmentQrcodeanzeigenBinding binding1;
 
-    public static int flaeche, dauer;
+
+    public static Integer flaeche, dauer;
     public static String name;
 
     EditText inputFlaeche;
@@ -37,7 +42,11 @@ public class DashboardFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        binding1 = FragmentQrcodeanzeigenBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        if (Global.isQrCodeCreated() == true){
+            root = binding1.getRoot();
+        }
 
         inputFlaeche = binding.inputFlaeche;
         inputName = binding.inputName;
@@ -47,11 +56,27 @@ public class DashboardFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                flaeche = Integer.parseInt(inputFlaeche.getText().toString());
-                dauer = Integer.parseInt(inputDauer.getText().toString());
-                name = inputName.getText().toString();
-                Navigation.findNavController(v).navigate(R.id.action_navigation_dashboard_to_qrcodeanzeigen);
+
+                if(!inputFlaeche.getText().toString().isEmpty() && !inputDauer.getText().toString().isEmpty() && !inputName.getText().toString().isEmpty()) {
+                    flaeche = Integer.parseInt(inputFlaeche.getText().toString());
+                    Global.setFlaeche(flaeche);
+                    dauer = Integer.parseInt(inputDauer.getText().toString());
+                    Global.setDauer(dauer);
+                    name = inputName.getText().toString();
+                    Global.setName(name);
+                    Global.setQrCodeCreated(true);
+                    Navigation.findNavController(v).navigate(R.id.action_navigation_dashboard_to_qrcodeanzeigen);
+                }else{
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                    builder.setTitle("Fehlgeschlagen!");
+                    builder.setMessage("Bitte geben Sie die Fläche Ihres Ladenlokales, sowie der Name und die typische Aufenthaltsdauer");
+                    builder.setIcon(R.drawable.problem);
+                    builder.setPositiveButton(
+                            "OK", (dialogInterface, i) -> dialogInterface.dismiss());
+                    builder.show();
+                }
             }
+
         });
 
 

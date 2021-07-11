@@ -136,6 +136,19 @@
         </LinearLayout>
     </ScrollView>
 
+
+    <Spinner
+        android:id="@+id/spinnerbl1"
+        android:layout_width="322dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
     <ImageView
         android:id="@+id/button"
         android:layout_width="45dp"

@@ -113,7 +113,8 @@ public class AddTestActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (test.getTestId()!=""&& test.getPersonId()!="") {
                     testList.add(test);
-
+                    State.isCreatedPerson = false;
+                    State.isCreatedTest = false;
 //                    Collections.sort(testList, new Comparator<Test>() {
 //                        @Override
 //                        public int compare(Test o1, Test o2) {
@@ -153,10 +154,6 @@ public class AddTestActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
-            case R.id.aboutApp:
-                Intent intent = new Intent(AddTestActivity.this, AboutAppActivity.class);
-                startActivity(intent);
-                return true;
             case R.id.faq:
                 Intent intent2 = new Intent(AddTestActivity.this, FaqActivity.class);
                 startActivity(intent2);
@@ -168,14 +165,6 @@ public class AddTestActivity extends AppCompatActivity {
             case R.id.privacy:
                 Intent intent4 = new Intent(AddTestActivity.this, PrivacyActivity.class);
                 startActivity(intent4);
-                return true;
-            case R.id.howTo:
-                Intent intent5 = new Intent(AddTestActivity.this, HowToActivity.class);
-                startActivity(intent5);
-                return true;
-            case R.id.impress:
-                Intent intent6 = new Intent(AddTestActivity.this, ImpressActivity.class);
-                startActivity(intent6);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

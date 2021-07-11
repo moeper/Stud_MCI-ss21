@@ -98,10 +98,6 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         switch(item.getItemId()){
-            case R.id.aboutApp:
-                Intent intent = new Intent(MainActivity.this, AboutAppActivity.class);
-                startActivity(intent);
-                return true;
             case R.id.faq:
                 Intent intent2 = new Intent(MainActivity.this, FaqActivity.class);
                 startActivity(intent2);
@@ -113,14 +109,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.privacy:
                 Intent intent4 = new Intent(MainActivity.this, PrivacyActivity.class);
                 startActivity(intent4);
-                return true;
-            case R.id.howTo:
-                Intent intent5 = new Intent(MainActivity.this, HowToActivity.class);
-                startActivity(intent5);
-                return true;
-            case R.id.impress:
-                Intent intent6 = new Intent(MainActivity.this, ImpressActivity.class);
-                startActivity(intent6);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

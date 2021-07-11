@@ -18,7 +18,7 @@
         android:layout_marginTop="17dp"
         android:layout_marginEnd="74dp"
         android:gravity="center"
-        android:text="Melden Sie sich Bitte an, wenn sie in einem Test-Zentrum arbeiten. " />
+        android:text="Melden Sie sich Bitte an, wenn Sie in einem Test-Zentrum arbeiten. " />
 
     <TextView
         android:id="@+id/textView20"

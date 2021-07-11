@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (email.getText().toString().equals("tester@web.de") && password.getText().toString().equals("tester123")){
+                if (email.getText().toString().equals("tester") && password.getText().toString().equals("tester")){
                     login();
                 }else {
                     AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);

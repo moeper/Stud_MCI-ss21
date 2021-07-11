@@ -64,7 +64,7 @@
         android:background="@drawable/layout_bg_round"
         android:ems="10"
         android:gravity="center"
-        android:hint="E-Mail Adresse"
+        android:hint="Benutzername"
         android:inputType="textPersonName" />
 
     <TextView
@@ -80,16 +80,16 @@
 
     <TextView
         android:id="@+id/textView23"
-        android:layout_width="72dp"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/loginId"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="169dp"
+        android:layout_marginStart="149dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="170dp"
+        android:layout_marginEnd="152dp"
         android:clickable="true"
-        android:text="Registieren"
+        android:text="Zugang anfragen"
         android:textColor="#2196F3" />
 
     <TextView
@@ -103,7 +103,7 @@
         android:layout_marginTop="169dp"
         android:layout_marginEnd="74dp"
         android:gravity="center"
-        android:text="Sie können sich anmelden, sobald ihre Registrierung verifiziert wurde!" />
+        android:text="Sie können sich anmelden, sobald es Ihnen die Zugangsdaten zugewiesen wurden!" />
 
     <ImageView
         android:id="@+id/imageView4"

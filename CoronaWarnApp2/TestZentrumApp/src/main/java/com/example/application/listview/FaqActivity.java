@@ -62,11 +62,11 @@ public class FaqActivity extends AppCompatActivity {
 
         // Adding child data
         List<String> n0 = new ArrayList<String>();
-        n0.add("Die App soll helfen, die Ausbreitung von Coid 19 einzudaemmen. Die App kann schnell informieren, wenn Sie Kontakt mit einer positiv getesteten hatten. Wenn Sie die Information schnell erhalten, verringert auch die Gefahr, dass sich viele Menschen anstecken.");
+        n0.add("Die App soll helfen, die Ausbreitung von Coid 19 einzudaemmen. Die App kann schnell informieren, ob eine Test positiv oder negativ ist. Das wird zum System weitergeleitet, um die Kontaktpersonen zu warnen.");
 
 
         List<String> n1 = new ArrayList<String>();
-        n1.add("Zuerst werden Sie in der Startseite landen. Da sehen Sie die aktuelle Corona-Regelungen. Um check in zu machen, druecken Sie QR-Code Button.......");
+        n1.add("Die App funktioniert ganz einfach. Bevor Sie mit den Testergebnisse loslegen, müssen Sie sich anmelden. Diese passiert in dem Sie in der App registrieren, danach wird Ihre Registrierung verifiziert, ob Sie in einem Test-Zentum arbeiten und führen die Test durch. Jetzt könne ganz bequem über die Anmeldungsseite anmelden. Nachdem Sie sich angemeldet haben, können Sie jetzt Test erfassen ");
 
         List<String> n2 = new ArrayList<String>();
         n2.add("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ");

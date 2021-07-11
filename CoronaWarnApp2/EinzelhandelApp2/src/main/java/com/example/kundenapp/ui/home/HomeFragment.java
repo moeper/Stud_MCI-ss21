@@ -73,7 +73,7 @@ public class HomeFragment extends Fragment {
         bl.add("Schleswig-Holstein");
         bl.add("Thüringen");
 
-        ArrayAdapter<String> blAdapter = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, bl);
+        ArrayAdapter<String> blAdapter = new ArrayAdapter<>(this.getActivity(), R.layout.spinner1, bl);
         blAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spnBl1.setAdapter(blAdapter);
         return root;

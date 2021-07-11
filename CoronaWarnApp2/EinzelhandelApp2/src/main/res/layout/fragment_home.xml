@@ -57,10 +57,9 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="409dp"
-        android:layout_height="398dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginLeft="1dp"
-        android:layout_marginTop="11dp"
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
         android:layout_marginBottom="24dp"
@@ -68,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
+        app:layout_constraintTop_toBottomOf="@+id/spinnerbl1">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -139,11 +138,10 @@
 
     <Spinner
         android:id="@+id/spinnerbl1"
-        android:layout_width="322dp"
-        android:layout_height="35dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
 
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"

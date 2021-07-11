@@ -1,5 +1,6 @@
 package com.example.application.listview;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -30,8 +31,6 @@ import static com.example.application.listview.MainActivity.testList;
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class AddTestActivity extends AppCompatActivity {
 
-
-
     Button kunScan;
     Button tesScan;
     Button save;
@@ -50,7 +49,20 @@ public class AddTestActivity extends AppCompatActivity {
         tesScan = findViewById(R.id.testQrCodeId);
         save = findViewById(R.id.saveId);
         cancel = findViewById(R.id.cancelId);
+        if (State.isCreatedTest==true){
+            EditText testTextHolder = findViewById(R.id.testId_holder);
+            testTextHolder.setText(UUID.randomUUID().toString());
+            test.setTestId(testTextHolder .getText().toString());
+        }
 
+
+        if (State.isCreatedPerson==true){
+
+
+            EditText kundenTextHolder = findViewById(R.id.kundeId_holder);
+            kundenTextHolder.setText(UUID.randomUUID().toString());
+            test.setPersonId(kundenTextHolder.getText().toString());
+        }
         kunScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,11 +70,10 @@ public class AddTestActivity extends AppCompatActivity {
                         com.example.application.listview.AddTestActivity.this
                 );
                 openPersonScannActivity();
-                EditText kundenTextHolder = findViewById(R.id.kundeId_holder);
-                kundenTextHolder.setText(UUID.randomUUID().toString());
-                test.setPersonId(kundenTextHolder.getText().toString());
 
-//                intentIntegrator.setPrompt("Drücken Sie auf Lauter Taste, um das Flash anzuschalten");
+                State.isCreatedPerson = true;
+
+                //                intentIntegrator.setPrompt("Drücken Sie auf Lauter Taste, um das Flash anzuschalten");
 //                intentIntegrator.setBeepEnabled(true);
 //                intentIntegrator.setOrientationLocked(true);
 //                intentIntegrator.setCaptureActivity(Capture.class);
@@ -78,10 +89,7 @@ public class AddTestActivity extends AppCompatActivity {
                         com.example.application.listview.AddTestActivity.this
                 );
                 openTestScannActivity();
-                EditText testTextHolder = findViewById(R.id.testId_holder);
-                testTextHolder.setText(UUID.randomUUID().toString());
-                test.setTestId(testTextHolder .getText().toString());
-
+                State.isCreatedTest=true;
  /*               intentIntegrator.setPrompt("Drücken Sie auf Lauter Taste, um das Flash anzuschalten");
                 intentIntegrator.setBeepEnabled(true);
                 intentIntegrator.setOrientationLocked(true);
@@ -119,6 +127,8 @@ public class AddTestActivity extends AppCompatActivity {
 //            }
         });
     }
+
+
     public void openActivity(){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);

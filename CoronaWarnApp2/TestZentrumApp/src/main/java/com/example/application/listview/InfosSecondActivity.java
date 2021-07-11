@@ -20,7 +20,7 @@ public class InfosSecondActivity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(InfosSecondActivity.this, MainActivity.class);
+                Intent intent = new Intent(InfosSecondActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });

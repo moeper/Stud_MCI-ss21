@@ -16,6 +16,4 @@ public class MyApp extends Application {
     public State getState() {
         return state;
     }
-
-
 }

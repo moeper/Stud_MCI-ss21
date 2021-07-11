@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hintergrund"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="263dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/textView20"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="74dp"
+        android:gravity="center"
+        android:text="Melden Sie sich Bitte an, wenn sie in einem Test-Zentrum arbeiten. " />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="113dp"
+        android:text="Anmeldung"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/passwortId"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/emailId"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/layout_bg_round"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Passwort"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/emailId"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/layout_bg_round"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="E-Mail Adresse"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView23"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="11dp"
+        android:text="Passwort vergessen?"
+        android:textColor="#2196F3" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginId"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="170dp"
+        android:clickable="true"
+        android:text="Registieren"
+        android:textColor="#2196F3" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwortId"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="74dp"
+        android:gravity="center"
+        android:text="Sie können sich anmelden, sobald ihre Registrierung verifiziert wurde!" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="268dp"
+        android:layout_height="197dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="72dp"
+        app:srcCompat="@drawable/tester" />
+
+    <Button
+        android:id="@+id/loginId"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwortId"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="99dp"
+        android:background="@drawable/layout_bg_round"
+        android:backgroundTint="#5DB075"
+        android:text="anmelden"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

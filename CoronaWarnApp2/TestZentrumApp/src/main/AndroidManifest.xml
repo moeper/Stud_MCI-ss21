@@ -11,7 +11,8 @@
         android:roundIcon="@drawable/testzentrum"
         android:supportsRtl="true"
         android:theme="@style/Theme.ListView">
-        <activity android:name=".TestScannActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".TestScannActivity" />
         <activity android:name=".PersonScannActivity" />
         <activity android:name=".HowToActivity" />
         <activity android:name=".ImpressActivity" />

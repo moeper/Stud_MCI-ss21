@@ -27,6 +27,7 @@ import android.widget.TextView;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.UUID;
 /**--------------------------------------------------------**/
 
@@ -49,6 +50,8 @@ public class NotificationsFragment extends Fragment{
     private FragmentBeforeQrCodeBinding binding1;
     private FragmentNotificationsBinding binding;
 
+    Integer increment = 0;
+
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -59,6 +62,12 @@ public class NotificationsFragment extends Fragment{
         binding = FragmentNotificationsBinding.inflate(inflater, container, false);
         binding1 = FragmentBeforeQrCodeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        textView = binding.textView16;
+
+        Random rand = new Random();
+        increment= rand.nextInt(20);
+        textView.setText(increment.toString());
 
         if (Global.isQrCodeCreated()==false){
             root = binding1.getRoot();

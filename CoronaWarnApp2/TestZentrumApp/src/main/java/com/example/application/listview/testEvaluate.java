@@ -31,6 +31,8 @@ public class testEvaluate extends AppCompatActivity {
 
         Intent intent = getIntent();
 
+
+
         if (intent.getExtras() != null){
             test = (Test) intent.getSerializableExtra("test");
 

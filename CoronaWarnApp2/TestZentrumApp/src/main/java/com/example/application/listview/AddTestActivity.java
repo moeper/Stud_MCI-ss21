@@ -23,6 +23,7 @@ import org.jetbrains.annotations.Nullable;
 import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.UUID;
 
 import static com.example.application.listview.MainActivity.testList;
 
@@ -50,34 +51,42 @@ public class AddTestActivity extends AppCompatActivity {
         save = findViewById(R.id.saveId);
         cancel = findViewById(R.id.cancelId);
 
-        tesScan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                IntentIntegrator intentIntegrator = new IntentIntegrator(
-                        com.example.application.listview.AddTestActivity.this
-                );
-
-                intentIntegrator.setPrompt("Drücken Sie auf Lauter Taste, um das Flash anzuschalten");
-                intentIntegrator.setBeepEnabled(true);
-                intentIntegrator.setOrientationLocked(true);
-                intentIntegrator.setCaptureActivity(Capture.class);
-                intentIntegrator.initiateScan();
-            }
-        });
-
-
         kunScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 IntentIntegrator intentIntegrator = new IntentIntegrator(
                         com.example.application.listview.AddTestActivity.this
                 );
+                openPersonScannActivity();
+                EditText kundenTextHolder = findViewById(R.id.kundeId_holder);
+                kundenTextHolder.setText(UUID.randomUUID().toString());
+                test.setPersonId(kundenTextHolder.getText().toString());
 
-                intentIntegrator.setPrompt("Drücken Sie auf Lauter Taste, um das Flash anzuschalten");
+//                intentIntegrator.setPrompt("Drücken Sie auf Lauter Taste, um das Flash anzuschalten");
+//                intentIntegrator.setBeepEnabled(true);
+//                intentIntegrator.setOrientationLocked(true);
+//                intentIntegrator.setCaptureActivity(Capture.class);
+//                intentIntegrator.initiateScan();
+            }
+        });
+
+
+        tesScan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                IntentIntegrator intentIntegrator = new IntentIntegrator(
+                        com.example.application.listview.AddTestActivity.this
+                );
+                openTestScannActivity();
+                EditText testTextHolder = findViewById(R.id.testId_holder);
+                testTextHolder.setText(UUID.randomUUID().toString());
+                test.setTestId(testTextHolder .getText().toString());
+
+ /*               intentIntegrator.setPrompt("Drücken Sie auf Lauter Taste, um das Flash anzuschalten");
                 intentIntegrator.setBeepEnabled(true);
                 intentIntegrator.setOrientationLocked(true);
                 intentIntegrator.setCaptureActivity(Capture.class);
-                intentIntegrator.initiateScan();
+                intentIntegrator.initiateScan();*/
             }
         });
 
@@ -94,24 +103,33 @@ public class AddTestActivity extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (test.getTestId()!=""&& test.getPersonId()!=""){
+                if (test.getTestId()!=""&& test.getPersonId()!="") {
                     testList.add(test);
 
-                    Collections.sort(testList, new Comparator<Test>() {
-                        @Override
-                        public int compare(Test o1, Test o2) {
-                            return o1.getTestResult().compareTo(o2.getTestResult());
-                        }
-                    });
-
+//                    Collections.sort(testList, new Comparator<Test>() {
+//                        @Override
+//                        public int compare(Test o1, Test o2) {
+//                            return o1.getTestResult().compareTo(o2.getTestResult());
+//                        }
+//                    });
+                }
 
                 openActivity();
                 }
-            }
+//            }
         });
     }
     public void openActivity(){
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void openPersonScannActivity(){
+        Intent intent = new Intent(this, PersonScannActivity.class);
+        startActivity(intent);
+    }
+    public void openTestScannActivity(){
+        Intent intent = new Intent(this, TestScannActivity.class);
         startActivity(intent);
     }
     @Override
@@ -154,40 +172,40 @@ public class AddTestActivity extends AppCompatActivity {
 
         }
     }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-
-        super.onActivityResult(requestCode, resultCode, data);
-        IntentResult intentResult = IntentIntegrator.parseActivityResult(
-                requestCode,resultCode,data
-        );
-
-        editTextKunde = findViewById(R.id.kundeId_holder);
-        editTextTest = findViewById(R.id.testId_holder);
-
-        if(intentResult.getContents() != null){
-            AlertDialog.Builder builder = new AlertDialog.Builder(
-                    com.example.application.listview.AddTestActivity.this
-            );
-
-
-            builder.setTitle("Result");
-            builder.setMessage(intentResult.getContents());
-            builder.setPositiveButton(
-                    "OK", (dialogInterface, i) -> dialogInterface.dismiss());
-            builder.show();
-
-            if (intentResult.getContents().charAt(0) == 'P') {
-                editTextKunde.setText(intentResult.getContents());
-                test.setPersonId(intentResult.getContents());
-            }else if(intentResult.getContents().charAt(0) == 'T'){
-                editTextTest.setText(intentResult.getContents());
-                test.setTestId(intentResult.getContents());
-            }
-
-        }else {
-            Toast.makeText(getApplicationContext(), "Sie haben leider nichts gescannt!", Toast.LENGTH_SHORT).show();
-        }
-    }
+//
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+//
+//        super.onActivityResult(requestCode, resultCode, data);
+//        IntentResult intentResult = IntentIntegrator.parseActivityResult(
+//                requestCode,resultCode,data
+//        );
+//
+//        editTextKunde = findViewById(R.id.kundeId_holder);
+//        editTextTest = findViewById(R.id.testId_holder);
+//
+//        if(intentResult.getContents() != null){
+//            AlertDialog.Builder builder = new AlertDialog.Builder(
+//                    com.example.application.listview.AddTestActivity.this
+//            );
+//
+//
+//            builder.setTitle("Result");
+//            builder.setMessage(intentResult.getContents());
+//            builder.setPositiveButton(
+//                    "OK", (dialogInterface, i) -> dialogInterface.dismiss());
+//            builder.show();
+//
+//            if (intentResult.getContents().charAt(0) == 'P') {
+//                editTextKunde.setText(intentResult.getContents());
+//                test.setPersonId(intentResult.getContents());
+//            }else if(intentResult.getContents().charAt(0) == 'T'){
+//                editTextTest.setText(intentResult.getContents());
+//                test.setTestId(intentResult.getContents());
+//            }
+//
+//        }else {
+//            Toast.makeText(getApplicationContext(), "Sie haben leider nichts gescannt!", Toast.LENGTH_SHORT).show();
+//        }
+//    }
 }

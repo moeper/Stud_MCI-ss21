@@ -7,98 +7,130 @@
     tools:context=".HowToActivity">
 
     <TextView
-        android:id="@+id/textView14"
-        android:layout_width="216dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView19"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="98dp"
-        android:gravity="center"
-        android:text="Wozu dient diese App?"
-        android:textColor="#000000"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="219dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView14"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="96dp"
-        android:gravity="center"
-        android:text="Wie funktioniert die App?"
-        android:textColor="#000000"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView15"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="81dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="84dp"
-        android:gravity="center"
-        android:text="Welche Daten werden benötigt"
-        android:textColor="#000000"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView16"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="29dp"
-        android:gravity="center"
-        android:text="Kann die App auch im Ausland genutzt wird"
-        android:textColor="#000000"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="201dp"
-        android:layout_height="29dp"
-        android:layout_below="@+id/textView17"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="105dp"
-        android:gravity="center"
-        android:text="Ist die App kostenlos"
-        android:textColor="#000000"
-        android:textSize="18dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView32"
+        android:layout_width="152dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="98dp"
-        android:gravity="center"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="151dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="150dp"
         android:text="Häufige Fragen"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ExpandableListView>
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView14"-->
+<!--        android:layout_width="216dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/textView19"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="97dp"-->
+<!--        android:layout_marginTop="71dp"-->
+<!--        android:layout_marginEnd="98dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Wozu dient diese App?"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView15"-->
+<!--        android:layout_width="219dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/textView14"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="96dp"-->
+<!--        android:layout_marginTop="35dp"-->
+<!--        android:layout_marginEnd="96dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Wie funktioniert die App?"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView16"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/textView15"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="81dp"-->
+<!--        android:layout_marginTop="33dp"-->
+<!--        android:layout_marginEnd="84dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Welche Daten werden benötigt"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView17"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/textView16"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="31dp"-->
+<!--        android:layout_marginTop="26dp"-->
+<!--        android:layout_marginEnd="29dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Kann die App auch im Ausland genutzt wird"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView18"-->
+<!--        android:layout_width="201dp"-->
+<!--        android:layout_height="29dp"-->
+<!--        android:layout_below="@+id/textView17"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="105dp"-->
+<!--        android:layout_marginTop="45dp"-->
+<!--        android:layout_marginEnd="105dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Ist die App kostenlos"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView19"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="97dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="98dp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Häufige Fragen"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="bold" />-->
 </RelativeLayout>

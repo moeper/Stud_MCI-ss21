@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KundenApp</string>
+    <string name="app_name">Einzelhandel App</string>
     <string name="title_home">Startseite</string>
     <string name="title_dashboard">QR-Code</string>
     <string name="title_notifications">Kundenanzahl</string>

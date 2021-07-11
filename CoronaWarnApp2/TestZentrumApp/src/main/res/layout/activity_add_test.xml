@@ -20,7 +20,9 @@
         android:layout_marginBottom="80dp"
         android:text="Abbruch"
         android:textColor="#FFFFFF"
-        app:backgroundTint="#5DB075" />
+        app:backgroundTint="#5DB075"
+        android:background="@drawable/layout_bg_round"
+        />
 
     <Button
         android:id="@+id/saveId"
@@ -36,7 +38,9 @@
         android:layout_toStartOf="@+id/cancelId"
         android:text="Speichern"
         android:textColor="#FFFFFF"
-        app:backgroundTint="#5DB075" />
+        app:backgroundTint="#5DB075"
+        android:background="@drawable/layout_bg_round"
+        />
 
     <Button
         android:id="@+id/testQrCodeId"
@@ -50,7 +54,9 @@
         android:layout_marginEnd="85dp"
         android:text="Test QR-Code scannen"
         android:textColor="#FFFFFF"
-        app:backgroundTint="#5DB075" />
+        app:backgroundTint="#5DB075"
+        android:background="@drawable/layout_bg_round"
+        />
 
 
     <TextView
@@ -98,7 +104,10 @@
         android:layout_marginEnd="105dp"
         android:text="Kunde QR-Code scannen"
         android:textColor="#FFFFFF"
-        app:backgroundTint="#5DB075" />
+        app:backgroundTint="#5DB075"
+        android:background="@drawable/layout_bg_round"
+
+        />
 
     <EditText
         android:id="@+id/kundeId_holder"

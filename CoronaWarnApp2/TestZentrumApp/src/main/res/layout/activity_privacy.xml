@@ -38,11 +38,13 @@
 
         <Button
             android:id="@+id/acceptId"
-            android:layout_width="wrap_content"
+            android:layout_width="390dp"
             android:layout_height="wrap_content"
             android:text="Akzeptieren"
             android:textColor="#FFFFFF"
-            app:backgroundTint="#5DB075" />
+            app:backgroundTint="#5DB075"
+            android:background="@drawable/layout_bg_round"
+            />
 
     </LinearLayout>
 

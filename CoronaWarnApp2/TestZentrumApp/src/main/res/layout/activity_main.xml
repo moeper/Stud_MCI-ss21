@@ -11,7 +11,7 @@
     <ListView
         android:id="@+id/viewList"
         android:layout_width="match_parent"
-        android:layout_height="619dp"
+        android:layout_height="582dp"
         android:layout_below="@+id/textView"
         android:layout_marginTop="5dp">
 
@@ -21,20 +21,17 @@
     <Button
         android:id="@+id/testErfassen"
         android:layout_width="199dp"
-        android:layout_height="52dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/viewList"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="106dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="9dp"
-        android:layout_marginEnd="106dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/layout_bg_round"
         android:backgroundTint="#5DB075"
         android:text="@string/test_erfassen"
-        android:textColor="#FFFFFF"
-        android:background="@drawable/layout_bg_round"
-        />
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView"

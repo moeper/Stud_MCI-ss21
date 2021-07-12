@@ -28,7 +28,7 @@ public class PersonScannActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        handler.postDelayed(runnable, 3000);
+        handler.postDelayed(runnable, 1000);
     }
 
     @Override

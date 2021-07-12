@@ -107,7 +107,7 @@ public class FaqActivity extends AppCompatActivity {
 
         listDataHeader.add("Wo sehe ich die aktuellen Corona Regeln?");
         List<String> n6 = new ArrayList<String>();
-        n6.add("Auf der Startseite.");
+        n6.add("Auf dem Startseite können Sie über ein Dropdown Menü Ihr gewünschtes Bundesland wählen um die aktuellen Reglen einsehen zu können.");
         listDataChild.put(listDataHeader.get(6), n6);
 
         listDataHeader.add("Wie führe ich einen Checkin durch?");
@@ -124,6 +124,16 @@ public class FaqActivity extends AppCompatActivity {
         List<String> n9 = new ArrayList<String>();
         n9.add("Sie tippen im Menü auf \"Tests\", hier können Sie einen neuen Test anlegen. Es wird Ihnen ein QR-Code angezeigt den Sie im Testzentrum vorzeigen können. Nachdem der Test durch das Testzentrum erfasst wurde wird dieser unter Tests angezeigt. Das Ergebnis wird automatisch mit angezeigt wenn es vorliegt");
         listDataChild.put(listDataHeader.get(9), n9);
+
+        listDataHeader.add("Was passiert wenn meine Aufenthaltsdauer abgelaufen ist?");
+        List<String> n10 = new ArrayList<String>();
+        n10.add("Sie werden Benachrichtigt und können wählen ob Sie die Aufenthaltsdauer verlängern oder den Aufenthalt beenden wollen (Checkout).");
+        listDataChild.put(listDataHeader.get(10), n10);
+
+        listDataHeader.add("Was nutzt die Angebe der Aufenthaltsdauer?");
+        List<String> n11 = new ArrayList<String>();
+        n10.add("So kann gewährleistet werden, dass Sie nur gewarnt werden, wenn während Ihres Besuchs in einem Ladenlokal kontakt mit einem Infizierten bestand.");
+        listDataChild.put(listDataHeader.get(11), n11);
 
          // Header, Child data
 

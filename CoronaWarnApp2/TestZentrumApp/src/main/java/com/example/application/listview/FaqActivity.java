@@ -54,38 +54,38 @@ public class FaqActivity extends AppCompatActivity {
         // Adding child data
         listDataHeader.add("Wofür brauchen wir die App?");
         listDataHeader.add("Wie funktioniert die App?");
-        listDataHeader.add("Wann warnt die App?");
+        //listDataHeader.add("Wann warnt die App?");
         listDataHeader.add("Wie werden die Datensicherheit gewaehrleisten?");
-        listDataHeader.add("Welche personliche Daten speichert die App?");
+        //listDataHeader.add("Welche personliche Daten speichert die App?");
         listDataHeader.add("Kann die App im Ausland benutzt werden?");
 
 
         // Adding child data
         List<String> n0 = new ArrayList<String>();
-        n0.add("Die App soll helfen, die Ausbreitung von Coid 19 einzudaemmen. Die App kann schnell informieren, ob eine Test positiv oder negativ ist. Das wird zum System weitergeleitet, um die Kontaktpersonen zu warnen.");
+        n0.add("Die App soll helfen, die Ausbreitung von Covid 19 einzudaemmen. Die App dient dazu die Corona Tests den getesteten zuzuordnen um die Kontaktpersonen zu warnen.");
 
 
         List<String> n1 = new ArrayList<String>();
         n1.add("Die App funktioniert ganz einfach. Bevor Sie mit den Testergebnisse loslegen, müssen Sie sich anmelden. Diese passiert in dem Sie in der App registrieren, danach wird Ihre Registrierung verifiziert, ob Sie in einem Test-Zentum arbeiten und führen die Test durch. Jetzt könne ganz bequem über die Anmeldungsseite anmelden. Nachdem Sie sich angemeldet haben, können Sie jetzt Test erfassen ");
 
         List<String> n2 = new ArrayList<String>();
-        n2.add("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ");
+        n2.add("Es werden keine persönlichen Daten der Benutzer gespeichert, die Testergebnisse werden anonym hinterlegt");
 
         List<String> n3 = new ArrayList<String>();
-        n3.add("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ");
+        n3.add("Nein");
 
-        List<String> n4 = new ArrayList<String>();
+        /*List<String> n4 = new ArrayList<String>();
         n4.add("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ");
 
         List<String> n5 = new ArrayList<String>();
-        n5.add("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ");
+        n5.add("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ");*/
 
 
         listDataChild.put(listDataHeader.get(0), n0); // Header, Child data
         listDataChild.put(listDataHeader.get(1), n1);
         listDataChild.put(listDataHeader.get(2), n2);
         listDataChild.put(listDataHeader.get(3), n3);
-        listDataChild.put(listDataHeader.get(4), n4);
-        listDataChild.put(listDataHeader.get(5), n5);
+        //listDataChild.put(listDataHeader.get(4), n4);
+        //listDataChild.put(listDataHeader.get(5), n5);
     }
 }

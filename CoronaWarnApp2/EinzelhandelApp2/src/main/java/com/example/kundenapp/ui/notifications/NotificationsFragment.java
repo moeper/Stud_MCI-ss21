@@ -24,6 +24,7 @@ import androidx.navigation.Navigation;
 
 import android.widget.Button;
 
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -74,24 +75,6 @@ public class NotificationsFragment extends Fragment{
         Random rand = new Random();
         increment= rand.nextInt(20);
         textView.setText(increment.toString());
-
-        if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.O){
-            NotificationChannel channel = new NotificationChannel("My Notification", "My Notification", NotificationManager.IMPORTANCE_DEFAULT );
-            NotificationManager manager = getContext().getSystemService(NotificationManager.class);
-            manager.createNotificationChannel(channel);
-        }
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                NotificationCompat.Builder builder = new NotificationCompat.Builder(getContext(), "My Notification");
-                builder.setContentTitle("Warnung");
-                builder.setContentText("Warnung, bitte lassen Sie sich so schnell wie möglich testen. Das Risiko, dass Sie mit einem Infizierten begegnet haben ist sehr hoch!");
-                builder.setAutoCancel(true);
-
-                NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getContext());
-                managerCompat.notify(1,builder.build());
-            }
-        });
 
 
         if (Global.isQrCodeCreated()==false){

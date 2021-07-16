@@ -45,26 +45,26 @@ public class qrcodeanzeigen extends Fragment {
         textView.setText("Veranstalltungsname: "+Global.getName() + "\nTypische Aufenthaltsdauer: "+ Global.getDauer().toString() +"\nFläche: "+ Global.getFlaeche());
         // Inflate the layout for this fragment
 
-//        if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.O){
-//            NotificationChannel channel = new NotificationChannel("My Notification", "My Notification", NotificationManager.IMPORTANCE_DEFAULT );
-//            NotificationManager manager = getContext().getSystemService(NotificationManager.class);
-//            manager.createNotificationChannel(channel);
-//        }
+        if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.O){
+            NotificationChannel channel = new NotificationChannel("My Notification", "My Notification", NotificationManager.IMPORTANCE_DEFAULT );
+            NotificationManager manager = getContext().getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(channel);
+        }
 
-//        binding.imageView7.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                Global.setNotify(true);
-//                        NotificationCompat.Builder builder = new NotificationCompat.Builder(getContext(), "My Notification");
-//                        builder.setContentTitle("Warnung");
-//                        builder.setContentText("Warnung, bitte lassen Sie sich so schnell wie möglich testen. Das Risiko, dass Sie mit einem Infizierten begegnet haben ist sehr hoch!");
-//                        builder.setSmallIcon(R.drawable.ic_positiv);
-//
-//                        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getContext());
-//                        managerCompat.notify(1,builder.build());
-//            }
-//        });
+        binding.imageView7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Global.setNotify(true);
+                        NotificationCompat.Builder builder = new NotificationCompat.Builder(getContext(), "My Notification");
+                        builder.setContentTitle("Warnung");
+                        builder.setContentText("Die maximale Kundenanzahl ist erreicht, bitte sorgen Sie dafür, dass diese nicht überschreitet");
+                        builder.setSmallIcon(R.drawable.problem);
+
+                        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getContext());
+                        managerCompat.notify(1,builder.build());
+            }
+        });
 
         deleteQrCodeButton = binding.deleteQrCodeButton;
         deleteQrCodeButton.setOnClickListener(new View.OnClickListener() {

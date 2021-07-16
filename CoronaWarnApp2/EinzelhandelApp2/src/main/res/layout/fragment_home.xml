@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/warnlogoId"
         android:layout_width="199dp"
         android:layout_height="132dp"
         android:layout_marginStart="93dp"
@@ -32,6 +32,7 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="93dp"
         android:layout_marginRight="93dp"
+        android:clickable="true"
         android:src="@drawable/warnstatusgood"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/warnlogoId" />
 
     <ScrollView
         android:id="@+id/scrollView2"

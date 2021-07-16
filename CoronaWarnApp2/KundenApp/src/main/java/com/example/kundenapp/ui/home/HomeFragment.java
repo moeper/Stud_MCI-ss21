@@ -1,16 +1,25 @@
 package com.example.kundenapp.ui.home;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.NotificationCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -18,6 +27,7 @@ import androidx.navigation.Navigation;
 
 import com.example.kundenapp.FaqActivity;
 import com.example.kundenapp.FirstStartActivity;
+import com.example.kundenapp.NotoficationActivity;
 import com.example.kundenapp.R;
 import com.example.kundenapp.databinding.FragmentHomeBinding;
 import com.example.kundenapp.databinding.FragmentNotificationsBinding;
@@ -26,11 +36,14 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
+import static androidx.core.content.ContextCompat.getSystemService;
+
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
     private FragmentHomeBinding binding;
     private Spinner spnBl1;
+    ImageView imageView;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -55,6 +68,23 @@ public class HomeFragment extends Fragment {
         //return binding.getRoot();
 
 
+
+        binding.warnlogoId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String message = "Warnung! bitte lassen Sie sich schnell wie möglich testen, das Risiko, dass Sie mit einem Infizierten in Kontakt waren";
+                NotificationCompat.Builder builder = new NotificationCompat.Builder(getContext()).setSmallIcon(R.drawable.ic_positiv)
+                        .setContentTitle("Warnung")
+                        .setContentText(message)
+                        .setAutoCancel(true);
+                Intent intent = new Intent(getContext(), NotoficationActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("message", message);
+                PendingIntent pendingIntent = PendingIntent.getActivity(getContext(),0,intent,PendingIntent.FLAG_UPDATE_CURRENT);
+                builder.setContentIntent(pendingIntent);
+                NotificationManager notificationManager = (NotificationManager)getContext().getSystemService(Context.NOTIFICATION_SERVICE);
+            }
+        });
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
@@ -82,11 +112,20 @@ public class HomeFragment extends Fragment {
         blAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spnBl1.setAdapter(blAdapter);
 
+
         return root;
     }
 
     public void onViewCreated(View view, Bundle savedInstanceState){
         super.onViewCreated(view, savedInstanceState);
+
+//        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+//            NotificationChannel channel = new NotificationChannel("My Notification","My Notification",NotificationManager.IMPORTANCE_DEFAULT);
+//            NotificationManager manager = (NotificationManager) getContext().getSystemService(NotificationManager.class);
+//            manager.createNotificationChannel(channel);
+//        }
+
+
 
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override

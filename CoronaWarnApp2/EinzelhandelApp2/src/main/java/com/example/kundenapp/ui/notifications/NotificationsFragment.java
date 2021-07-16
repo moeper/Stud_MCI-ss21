@@ -1,6 +1,8 @@
 package com.example.kundenapp.ui.notifications;
 
 import android.app.AlertDialog;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,6 +15,8 @@ import android.widget.ArrayAdapter;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
@@ -64,9 +68,22 @@ public class NotificationsFragment extends Fragment{
         View root = binding.getRoot();
 
         textView = binding.textView16;
-
+        if (Build.VERSION.SDK_INT>= Build.VERSION_CODES.O){
+            NotificationChannel channel = new NotificationChannel("My Notification", "My Notification", NotificationManager.IMPORTANCE_DEFAULT );
+            NotificationManager manager = getContext().getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(channel);
+        }
         Random rand = new Random();
         increment= rand.nextInt(20);
+        if (increment>=5){
+            Global.setMax(true);
+            NotificationCompat.Builder builder = new NotificationCompat.Builder(getContext(), "My Notification");
+            builder.setContentTitle("Warnung");
+            builder.setContentText("Warnung, bitte lassen Sie sich so schnell wie möglich testen. Das Risiko, dass Sie mit einem Infizierten begegnet haben ist sehr hoch!");
+
+            NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getContext());
+            managerCompat.notify(1,builder.build());
+        }
         textView.setText(increment.toString());
 
         if (Global.isQrCodeCreated()==false){

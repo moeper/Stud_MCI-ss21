@@ -6,15 +6,7 @@ public class Global {
     public static String name;
     public static boolean qrCodeCreated;
     public static boolean notify;
-    public static boolean max;
 
-    public static boolean isMax() {
-        return max;
-    }
-
-    public static void setMax(boolean max) {
-        Global.max = max;
-    }
 
     public static void setQrCodeCreated(boolean qrCodeCreated) {
         Global.qrCodeCreated = qrCodeCreated;

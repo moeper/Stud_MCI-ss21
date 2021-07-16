@@ -132,9 +132,13 @@ public class FaqActivity extends AppCompatActivity {
 
         listDataHeader.add("Was nutzt die Angebe der Aufenthaltsdauer?");
         List<String> n11 = new ArrayList<String>();
-        n10.add("So kann gewährleistet werden, dass Sie nur gewarnt werden, wenn während Ihres Besuchs in einem Ladenlokal kontakt mit einem Infizierten bestand.");
+        n11.add("So kann gewährleistet werden, dass Sie nur gewarnt werden, wenn während Ihres Besuchs in einem Ladenlokal kontakt mit einem Infizierten bestand.");
         listDataChild.put(listDataHeader.get(11), n11);
 
+        listDataHeader.add("Was bedeutet das Warn Status Symbol auf der Startseite?");
+        List<String> n12 = new ArrayList<String>();
+        n12.add("Hier sehen Sie Ihren Corona Warn-Status, ist es grün waren Sie nicht in Kontakt mit einem Infizierten. Ist es rot, gab es eine Ladenlokal-Besuch wo Sie und ein Infizierter gleichzeitig eingekauft haben.");
+        listDataChild.put(listDataHeader.get(12), n12);
          // Header, Child data
 
 

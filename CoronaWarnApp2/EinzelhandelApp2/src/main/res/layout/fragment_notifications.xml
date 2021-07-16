@@ -59,6 +59,7 @@
         android:layout_marginTop="124dp"
         android:layout_marginEnd="151dp"
         android:layout_marginRight="151dp"
+        android:clickable="true"
         android:gravity="center"
         android:text=""
         android:textColor="#FFFFFF"
